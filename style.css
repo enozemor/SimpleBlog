@@ -1,7 +1,14 @@
 * {
+    <!-- Ta bort margin/padding och se till att bredden är den vi sätter själva -->
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.clear:after {
+    content: "";
+    display:table;
+    clear:both;
 }
 
 body {
@@ -15,7 +22,6 @@ h1, h2 {
 
 h1 {
     font-size: 50px;
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -35,4 +41,33 @@ p {
 .bildtext {
     color: #c10000;
     margin-top: 10px;
+    margin-left: 40px;
+}
+
+.container {
+    width: 1140px;
+    margin: 15px auto 0 auto;
+}
+.main-posts {
+    width: 75%;
+    padding-right: 20px;
+    float:left;
+}
+
+.recent-posts {
+    width: 25%;
+    float:left;
+}
+
+.daily-fact {
+    border-top: 2px solid #000;
+    margin-top: 10px;
+}
+
+.daily-fact img {
+    width: 200px;
+}
+
+.recent {
+    margin-bottom: 50px;
 }
